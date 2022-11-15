@@ -12,7 +12,7 @@ getFile("ateam.json");
 
 function visibleAteam(list) {
     list.sort((a, b) => {
-        return b.age - a.age
+        return a.age - b.age
     })
 
     list.forEach(object => {
