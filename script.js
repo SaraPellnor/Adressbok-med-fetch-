@@ -1,4 +1,4 @@
-const book = document.querySelector("book")
+const book = document.querySelector(".book")
 
 
 
@@ -11,9 +11,25 @@ async function getFile(file) {
 getFile("ateam.json");
 
 function visibleAteam(list) {
-    const adressList = list
-    adressList.forEach(object => {
-        console.log(object)
+    list.forEach(object => {
+        // const ageOf = object.age
+        list.sort()
+        
+        const ul = document.createElement("ul")
+        const name = document.createElement("li")
+        const email = document.createElement("li")
+        const age = document.createElement("li")
+        const phone = document.createElement("li")
+        const title = document.createElement("li")
+        
+        name.innerHTML="Name: " + object.name
+        email.innerHTML="E-mail: " + object.email
+        age.innerHTML="Age: " + object.age
+        phone.innerHTML="Phone: " + object.phone
+        title.innerHTML="Title: " + object.title
+        book.appendChild(ul)
+        ul.append(name, email, age, phone, title)
+
     });
 }
 

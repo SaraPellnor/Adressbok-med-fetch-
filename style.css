@@ -5,7 +5,19 @@
 }
 
 .book {
+    font-size: larger;
+    padding: 2rem;
     width: 30rem;
-    height: 40rem;
+    height: auto;
     background-color: brown;
+}
+
+ul {
+    border-bottom: solid 1px  black;
+    margin: 1rem;
+}
+
+li {
+    list-style: none;
+    margin: 1rem;
 }
