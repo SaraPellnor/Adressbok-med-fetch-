@@ -11,10 +11,10 @@ async function getFile(file) {
 getFile("ateam.json");
 
 function visibleAteam(list) {
-    list.sort((object )=> {
-        console.log(object)
-        return object
+    list.sort((a, b) => {
+        return b.age - a.age
     })
+
     list.forEach(object => {
         
         const ul = document.createElement("ul")
@@ -36,7 +36,3 @@ function visibleAteam(list) {
 }
 
 //console.log(list)
-
-const months = ['March', 'Jan', 'Feb', 'Dec','a','b','d','c'];
-months.sort();
-console.log(months);
